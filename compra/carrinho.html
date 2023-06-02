@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <style>
+        .container{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .btn{
+            width: 20%;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Lista de Compras</h1>
+        <hr>
+    <form action="" id="form-carrinho">
+        <div class="row">
+
+            <div class="col-md-6">
+                <label for="">Produtos</label>
+                <select name="produtos" id="produto-list" class="form-control">
+                    <option value="Arroz">Arroz</option>
+                    <option value="Feijão">Feijão</option>
+                    <option value="Oleo">Oléo</option>
+                    <option value="Macarão">Macarão</option>
+                    <option value="Alho">Alho Kg</option>
+                    <option value="Cebola">Cebola Kg</option>
+                    <option value="Pão">Pão Francês unit.</option>
+                    <option value="Manteiga">Manteiga</option>
+                </select>
+            </div>
+
+            <div class="col-md-6">
+                <label for="">Quantidade</label>
+                <input type="number" id="qtds" name="qtds" class="form-control">
+            </div>
+            
+            <button class="btn btn-primary mt-3 mb-1" type="submit">Enviar</button>
+            <button class="btn btn-primary mt-3" id="registrar">Registrar Lista</button>
+        </div>
+        <br>
+        <hr>
+        <span id="resp"></span>
+    </form>
+    <hr>
+    </div>
+    <script src="carrinho.js"></script>
+</body>
+</html>
