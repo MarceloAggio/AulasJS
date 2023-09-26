@@ -1,0 +1,1 @@
+var comprimento = parseInt(prompt("Digite a Base :"));
